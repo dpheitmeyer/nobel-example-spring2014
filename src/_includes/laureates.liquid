@@ -1,0 +1,12 @@
+<ul class="listing">
+  {% for laureate in laureatesList %}
+    <li>
+      <span class="name">
+        {{
+            laureate.knownName.en
+        }}
+      </span><br/>
+      <span class="motivation">{{ laureate.motivation.en }}</span>
+    </li>
+  {% endfor %}
+</ul>

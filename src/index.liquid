@@ -1,0 +1,11 @@
+---
+title: "Chemistry Prizes"
+layout: base
+---
+<main>
+
+{% for prize in chemistry.nobelPrizes %}
+    <h3>{{ prize.awardYear }}</h3>
+    {% render "laureates" with prize.laureates as laureatesList %}
+{% endfor %}
+</main>
